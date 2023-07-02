@@ -1,0 +1,62 @@
+<div class='mt-4 container'>
+  <h3>Thêm sản phẩm</h3>
+  <form action='./add' method='POST' enctype='multipart/form-data'>
+    <div class='mb-3'>
+      <label for='name' class='form-label'>Nhập tên sách: </label>
+      <input type='text' id='name' class='form-control' name='txtName' />
+    </div>
+    <div class='mb-3'>
+      <label for='priceO' class='form-label'>Nhập giá cũ: </label>
+      <input type='text' id='priceO' class='form-control' name='txtPriceO' />
+    </div>
+    <div class='mb-3'>
+      <label for='priceN' class='form-label'>Nhập giá mới: </label>
+      <input type='text' id='priceN' class='form-control' name='txtPriceN' />
+    </div>
+    <div class='mb-3'>
+      <label for='img' class='form-label'>Nhập ảnh</label>
+      <input type='file' id='img' class='form-control' name='txtImg' />
+    </div>
+    <div class='mb-3'>
+      <label for='author' class='form-label'>Tác giả</label>
+      <input type='text' id='author' class='form-control' name='txtAuthor' />
+    </div>
+    <div class='mb-3'>
+      <label for='cpn' class='form-label'>Nhà xuất bản</label>
+      <input type='text' id='cpn' class='form-control' name='txtCpn' />
+    </div>
+    <div class='mb-3'>
+      <label for='supplier' class='form-label'>Nhà cung cấp</label>
+      <input
+        type='text'
+        id='supplier'
+        class='form-control'
+        name='txtSupplier'
+      />
+    </div>
+    <div class='mb-3'>
+      <label for='cv' class='form-label'>Hình thức bìa</label>
+      <input type='text' id='cv' class='form-control' name='txtCv' />
+    </div>
+    <div class='mb-3'>
+      <label for='txtType' class='form-label'>Nhập loại sách </label>
+      <select
+        class='form-select'
+        aria-label='Default select example'
+        name='txtType'
+      >
+        <option selected>Chọn loại sách</option>
+        <option value='1'>Văn học</option>
+        <option value='2'>Kinh tế</option>
+        <option value='3'>Tâm lý - Kỹ năng sống</option>
+        <option value='4'>Nuôi dạy con</option>
+        <option value='5'>Sách thiếu nhi</option>
+        <option value='6'>Tiểu sử - Hồi ký</option>
+        <option value='7'>Giáo khoa - Tham khảo</option>
+        <option value='8'>Sách học ngoại ngữ</option>
+        <option value='9'>Combo</option>
+      </select>
+    </div>
+    <button type='submit' class='btn btn-primary'>Submit</button>
+  </form>
+</div>
